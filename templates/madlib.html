@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="./static/madlibs.css">
+  <title>A MadLib</title>
+</head>
+<body>
+    <div>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab (eating a {{ food }} - big no, no, we know). When {{ person }} went to pick it up, it burst into flames in a totally {{ adj }} way.
+    </div>
+    <div class="spacer">
+    </div>
+    <div>After that, the {{ color }} {{ noun }} started to:
+        <ul>
+            {% for activity in activities %}
+                <li>{{ activity }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+     
+</body>
+</html>
